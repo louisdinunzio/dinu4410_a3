@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel='icon' href="/q1/www/img/doughnut.ico" />
+  <link rel="stylesheet" type="text/css" href="/q1/www/css/mystyle.css" media="screen" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="http://wlu-cp202.appspot.com/CP202/Fall2019/shopping_cart_v1/cart.js" async></script>
+
+  <!-- YOU MUST MODIFY THIS VALUE TO POINT TO YOUR ACTUAL CHECKOUT PAGE -->
+  <script>
+    localStorage.checkoutURL = "/q1/www/checkout.html";
+  </script>
+  <title>Lil Donut Shop</title>
+</head>
+
+<body>
+  <div class="header">
+    <a href="/q1/www/index.html" class="cartbutton">Home</a>
+    <a href="/q1/www/products/index.html" class="cartbutton">Products</a>
+  </div>
+  <div class="header" align="center">
+    <h4>Glazed for Days.</h4>
+    <p>
+      Even the Queen Bee is jealous of this one.
+    </p>
+    <img src="/q1/www/img/honeydonut.jpg" alt="Honey Glazed Donut" height=300px; width=500px;>
+  </div>
+
+  <div class="donutpageleft">
+    <h5>
+      1 Donut: $2.50 <br></h5>
+  </div>
+  <div class="donutpageright">
+    <h5>
+      Try our new honey glazed donut. Guaranteed to satisfy the worst of your cravings.
+    </h5>
+  </div>
+  <br>
+  <script>
+    var clientAddItemToCart({
+      prodName: ,
+      prodDesc: ,
+      prodPrice: ,
+      prodQty: ,
+    });
+  </script>
+
+    <button class="cartbutton" onclick="clientAddItemToCart({prodName: 'Honey Glazed Donut', prodDesc: 'A Yummy Honey Donut!', prodPrice: '2.50', prodQty: '1'});">Add to Cart</button>
+
+
+</body>
+
+</html>

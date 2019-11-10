@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>FakeChimp’s Registration Form</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="/q2/www/js/app.js" async></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+
+<body data-gr-c-s-loaded="true">
+  <a href="/q2/www/registrations/index.html">See the test registrations here.</a>
+  <div class="container" style="width: 100%; height: 100%; background: none repeat scroll 0% 0%; margin: 0px; padding: 0px;">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="width: 100%; height: 100%; background: none repeat scroll 0% 0%; margin: 0px; padding: 0px;">
+        <div style="position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);">
+          <div style="float: left; padding-right: 10%;">
+          </div>
+          <div style="float: right; padding-left: 10%;">
+
+
+              <div class="icon">
+                <div class="logo1">
+                  <img style="width:120px;" src="/q2/www/img/logo-color.png" alt="Logo">
+                </div>
+                <div class="logo2">
+                  <img style="width:120px;" src="/q2/www/img/logo-black-white.png" alt="Logo">
+                </div>
+
+          </div>
+          <div class="form">
+            <h1>Get Started With Your Account</h1>
+            Find your people. Engage your customers. Build your brand.
+            Do it all with FakeChimp’s Marketing Platform.
+            <hr>
+            <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register" method="post">
+
+                <p>
+                  <input type="hidden" name="student_id" id="student_id" value="170614410">
+                  <b>Email:</b><br /><input type="text" name="email" id="email">
+                </p>
+                <p>
+                  <b>Username:</b><br /><input type="text" name="username" id="username">
+                </p>
+                <p>
+                  <b>Password:</b>
+                  <script>
+                    function showPass() {
+                      var x = document.getElementById("password");
+                      if (x.type === "password") {
+                        x.type = "text";
+                      } else {
+                        x.type = "password";
+                      }
+                    }
+                  </script>
+
+                  <a href="javascript:showPass()" style="color: #007c89" onclick=""><i class="fa fa-eye" aria-hidden="false"></i>Show</a>
+                
+                  <br>
+                  <input type="password" name="password" id="password">
+                </p>
+                <input type="submit" value="Get Started!">
+                <br>
+                <p>
+                  By clicking the “Get Started!” button, you are creating a
+                  FakeChimp account.
+                  <hr>
+                  <footer>©2019 All Rights Reserved. FakeChimp® is a registered trademark of WLUCP202 Class.</footer>
+                </p>
+            </form>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+</body>
+
+
+</html>

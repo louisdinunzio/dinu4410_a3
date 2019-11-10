@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel='icon' href="/q1/www/img/doughnut.ico" />
+  <link rel="stylesheet" type="text/css" href="/q1/www/css/mystyle.css" media="screen" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="http://wlu-cp202.appspot.com/CP202/Fall2019/shopping_cart_v1/checkout.js" async></script>
+
+  <!-- YOU MUST MODIFY THIS VALUE TO POINT TO YOUR ACTUAL CHECKOUT PAGE -->
+  <script>
+    localStorage.checkoutURL = "/q1/www/checkout.html";
+  </script>
+  <title>Lil Donut Shop</title>
+</head>
+
+<body>
+  <div class="header">
+    <a href="/q1/www/index.html" class="cartbutton">Home</a>
+    <a href="index.html" class="cartbutton">Products</a>
+  </div>
+  <h3>
+  <div id="cp202-cart"></div></h3>
+  <center>
+      <form id="cp202-cart" action="http://cp202-server.appspot.com/order" method="post">
+    <input class="cartbutton" type="submit">
+  <input type="hidden" name="order_json" id="order_json" value="">
+<input type="hidden" name="student_id" id="student_id" value="170614410"></form>
+    </center>
+<center>
+  <img src="/q1/www/img/chocdonut.jpg" alt="Triple Chocolate Donut" height=300px; width=500px;>
+  <img src="/q1/www/img/honeydonut.jpg" alt="Triple Chocolate Donut" height=300px; width=500px;>
+  </center>
+</body>
+</html>

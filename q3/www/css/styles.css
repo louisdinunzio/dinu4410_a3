@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Proza+Libre&display=swap');
+body {
+  font-family: "Proza Libre", Arial, sans-serif;
+  font-size: 14px;
+  color: #241c15;
+}
+
+h1 {
+  font-family: 'Merriweather', 'Times New Roman', serif;
+  font-size: 34px;
+  letter-spacing: -0.2rem;
+  color: #241c15;
+  line-height: 1.1;
+}
+
+h1:after
+{
+  content:' ';
+  display:block;
+  border:0.5px solid #ECECEC;
+}
+
+footer {
+  font-family: 'Proza Libre', Arial, sans-serif;
+  font-size: 11px;
+  color: rgba(36, 28, 21, 0.65);
+}
+
+p {
+  font-family: 'Proza Libre', Arial, sans-serif;
+  font-size: 14px;
+  color: #241c15;
+}
+
+fieldset {
+  border: 1px solid skyblue;
+}
+
+input[type=submit] {
+  font-family: 'Proza Libre', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.2em;
+  border: none;
+  background-color: #007c89;
+  margin: 4px 2px;
+  padding: 4px 16px;
+}
+
+input[type=text], input[type=tel], input[type=file], input[type=date], input[type=email], input[type=password], select, textarea {
+  font-family: 'Proza Libre', Arial, sans-serif;
+  font-size: 14px;
+  margin: 4px 2px;
+  padding: 4px 16px;
+  border: solid;
+  border-width: 1px;
+  width: 100%;
+  height: 50px;
+}
+
+.icon {
+  display: inline;
+  float: left;
+}
+
+.form {
+  display: inline;
+  width: 70%;
+  float: right;
+}
+
+.logo1 {
+
+}
+
+.logo2 {
+    display: none;
+  }
+
+@media only screen and (max-device-width: 480px) {
+
+  .logo1 {
+  display: none;
+  }
+
+  .logo2 {
+  display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+    }
+
+.icon {
+  display: block;
+}
+
+.form {
+  display: inline;
+  width: 100%;
+  float: right;
+}
+
+
+}

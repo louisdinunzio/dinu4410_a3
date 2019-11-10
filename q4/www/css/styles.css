@@ -1,0 +1,175 @@
+* {
+  margin: 0px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  height: 293px;
+  width: 293px;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  display: inline;
+  width: 70%;
+  float: right;
+  display: block;
+}
+
+.avatar {
+  display: block;
+  float: left;
+  margin: auto;
+  border-radius: 100%;
+  background: -webkit-linear-gradient(left top, rgb(64,93,230), rgb(88,81,219), rgb(131,58,180), rgb(193,53,132), rgb(225,48,108), rgb(253,29,29), rgb(245,96,64), rgb(247,119,55), rgb(255,220,128));
+width: 150px;
+height: 150px;
+padding: 3px;
+}
+
+
+
+.description {
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  font-family: Verdana, Arial;
+}
+
+.menu {
+  background-color: white;
+  height: 80px;
+  color: black;
+  font-size: 28px;
+  font-family: Verdana, Arial;
+}
+
+.header {
+  background-color: white;
+  color: black;
+  font-size: 28px;
+  font-family: Verdana, Arial;
+  height: 25%;
+}
+
+.content {
+  background-color: white;
+  height: 293px;
+  width: 293px;
+  color: black;
+  font-size: 28px;
+  font-family: Verdana, Arial;
+}
+
+.feature-1 {
+  background-color: white;
+  height: 293px;
+  width: 293px;
+}
+
+.feature-2 {
+  background-color: white;
+  height: 293px;
+  width: 293px;
+}
+
+.feature-3 {
+  background-color: white;
+  height: 293px;
+  width: 293px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 415px) {
+  body {
+    background-color: white;
+  }
+
+  .headerText {
+    color: black;
+    font-size: 28px;
+    font-family: Verdana, Arial;
+  }
+
+.header {
+  height: 300px;
+}
+
+.page,
+.feature-1,
+.feature-2,
+.feature-3 {
+  width: 100%;
+}
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 416px) and (max-width: 1025px) {
+  body {
+    background-color: white;
+  }
+
+  .headerText {
+    color: black;
+    font-size: 28px;
+    font-family: Verdana, Arial;
+  }
+
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 50%;
+  }
+
+.header {
+  height: 300px;
+}
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 1026px) {
+  body {
+    background-color: white;
+  }
+
+  .headerText {
+    color: black;
+    font-size: 28px;
+    font-family: Verdana, Arial;
+  }
+
+  .page {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 33.3%;
+  }
+
+  .header {
+    height: 400px;
+  }
+
+  .sign-up {
+    height: 200px;
+    order: 1;
+  }
+
+  .content {
+    order: 2;
+  }
+}

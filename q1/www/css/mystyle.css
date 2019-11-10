@@ -1,0 +1,238 @@
+/* This is here to import a font not found in the default operating system as per requirements */
+@import url('https://fonts.googleapis.com/css?family=Cairo:200,600,900&display=swap');
+
+/* This is the font I have selected for the entire website. */
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 15px;
+  text-align: center;
+}
+
+.menu {
+  width: 25%;
+  float: left;
+  padding: 10px;
+  border: 5px solid #F7DD72;
+
+}
+
+.main {
+  width: 75%;
+  float: right;
+  padding: 10px;
+  border: 5px solid #F7DD72;
+
+}
+
+.donut1 {
+  width: 50%;
+  float: left;
+  padding: 10px;
+  border: 5px solid #F7DD72;
+  background-image: url("/q4/www/img/chocdonut.jpg");
+  background-color: #5AB1BB;
+  /* Used if the image is unavailable */
+  height: 30%;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+
+}
+
+.donut2 {
+  width: 50%;
+  float: right;
+  padding: 10px;
+  border: 5px solid #F7DD72;
+  background-image: url("/q4/www/img/honeydonut.jpg");
+  background-color: #5AB1BB;
+  /* Used if the image is unavailable */
+  height: 30%;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+}
+
+.donutpageleft {
+  width: 30%;
+  float: left;
+  padding: 10px;
+  border: 5px solid #a5c882;
+  background-color: #5AB1BB;
+  height: 30%;
+}
+
+.donutpageright {
+  width: 70%;
+  float: right;
+  padding: 10px;
+  border: 5px solid #a5c882;
+  background-color: #5AB1BB;
+  height: 30%;
+}
+
+.cartbutton {
+  display:block;
+  background-color: #a5c882;
+  border-color: rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  color: #F7DD72;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-bottom-width: 3px;
+  width: 50%;
+}
+
+.cartbutton:hover {
+  background-color: #ffffff;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.cartbutton:active {
+  background-color: #a5c882;
+  border-color: rgba(0, 0, 0, 0.9);
+}
+
+/*I have incorporated my own color palette into each section to add appeal */
+body {
+  font-family: Cairo, "sans-serif";
+  background-color: white;
+}
+
+/* This will be my large header for important subheadings */
+h1 {
+  font-family: Cairo, "sans-serif";
+  font-size: 90px;
+  color: #F7DD72;
+  text-align: center;
+}
+
+/* Here we can place more elaborate text neatly in a smaller format */
+h2 {
+  font-family: Cairo, "sans-serif";
+  font-size: 54px;
+  color: #A5C882;
+  text-align: center;
+}
+
+h3 {
+  font-family: Cairo, "sans-serif";
+  font-size: 48px;
+  color: #5AB1BB;
+  text-align: center;
+}
+
+h4 {
+  font-family: Cairo, "sans-serif";
+  font-size: 48px;
+  color: #f7dd72;
+}
+
+h5 {
+  font-family: Cairo, "sans-serif";
+  font-size: 32px;
+  color: #a5c882;
+}
+
+h6 {
+  font-family: Cairo, "sans-serif";
+  font-size: 32px;
+  color: #f7dd72;
+}
+
+p {
+  font-family: Cairo, "sans-serif";
+  font-size: 30px;
+  color: #5AB1BB;
+  text-align: center;
+}
+
+/* <SHOPPING_CART> */
+#cart-button:link {
+  color: #f7dd72 !important;
+}
+
+#cart-button:visited {
+  color: #5AB1BB;
+}
+
+#cart-button:hover {
+  color: #a5c882 !important;
+}
+
+#cart-button:active {
+  color: #A5C882;
+}
+
+.delete-icon {
+  color: #f7dd72 !important;
+}
+
+.delete-icon:hover {
+  color: red !important;
+}
+/* </SHOPPING_CART> */
+
+/* <CHECKOUT_CART> */
+.item {
+  background: #5ab1bb !important;
+  color: #a5c882 !important;
+}
+
+#item-name {
+  color: #f7dd72;
+}
+
+#item-description {
+  color: #f7dd72;
+}
+
+#item-quantity {
+  color:#f7dd72;
+}
+
+#item-price {
+  color:#f7dd72;
+}
+
+#item-quantity {
+  color:#f7dd72;
+}
+
+#cart-total {
+  background: #f7dd72;
+}
+
+#cart-total-subtotal {
+  color:#5AB1BB;
+}
+
+#cart-total-hst {
+  color: #5AB1BB;
+}
+
+#cart-total-amount {
+  color:#5ab1bb;
+}
+
+.white-text {
+  color:#5ab1bb;
+}
+/* </CHECKOUT_CART> */
